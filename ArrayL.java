@@ -49,5 +49,27 @@ public class ArrayL<T>{
 	public int getSize(){
 		return a.length;
 	}
+	public void remove(int indice){
+		for( int i= indice; i<elementi-1;i++){
+			a[i]=a[i+1];
+		}
+		if(indice<elementi){
+		elementi--;
+		a[elementi]=null;
+	    }
+	}
+	public void insert(T e, int indice){
+		    verificaCapacita(elementi+1);
+		    for(int i = elementi-1; i>=indice;i--){
+		    	if(a[indice]==null && indice<=elementi){
+			        break;
+		            }
+		    a[i+1]=a[i];
+		    }
+		    a[indice]=e;
+		    elementi++;
+		}
+
+	}
 
 }
