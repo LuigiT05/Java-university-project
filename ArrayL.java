@@ -1,3 +1,5 @@
+/*Creazione di un ArrayList manuale, ho creato alcuni dei metodi principali(ed utili ad una traccia che stavo seguendo)*/
+
 package gemini1;
 
 public class ArrayL<T>{
